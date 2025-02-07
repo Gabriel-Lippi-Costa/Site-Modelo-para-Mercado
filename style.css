@@ -638,6 +638,80 @@ header .mobile-menu {
 }
 }
 
+#footer {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid green; /* Barra superior vermelha */
+    width: 100%; /* Ocupa toda a largura da tela */
+    position: relative;
+    bottom: 0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    max-width: 1200px; /* Limita o conteúdo no centro */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px; /* Espaçamento lateral para telas menores */
+}
+
+.footer-logo {
+    width: 120px; /* Tamanho da logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite quebrar para a próxima linha em telas pequenas */
+    justify-content: center; /* Centraliza o menu */
+}
+
+.footer-menu li {
+    display: inline;
+}
+
+.footer-menu a {
+    color: #fff; /* Texto branco */
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #d9534f; /* Texto vermelho ao passar o mouse */
+}
+
+#footer p {
+    font-size: 0.9em;
+    color: #ccc; /* Texto cinza claro */
+    margin-top: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 100px; /* Reduz o tamanho da logo */
+    }
+
+    .footer-menu {
+        gap: 15px; /* Menor espaço entre itens */
+    }
+
+    .footer-menu a {
+        font-size: 0.9em; /* Texto um pouco menor */
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     section.cards > .card {
         width: calc(50% - 15px); /* 2 por linha */
