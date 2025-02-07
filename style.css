@@ -336,6 +336,167 @@ section.cards > .card > span {
 
 /*FIM SEÇÃO BEBIDAS*/
 
+
+
+/*COMEÇO SEÇÃO AÇOUGE*/
+
+#acougue {
+    margin: 90px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#acougue h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: green;
+    margin: 20px 0;
+}
+
+#acougue .img-acougue img {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os cards */
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Padrão: Um abaixo do outro */
+    max-width: 300px; /* Define um tamanho máximo para os cards */
+}
+
+section.cards > .card > h3 {
+    font-size: 1.4em;
+    margin: 5px 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+section.cards > .card > span {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
+
+/*FIM SEÇÃO AÇOUGE*/
+
+
+
+/*COMEÇO SEÇÃO MERCEARIA*/
+
+#mercearia {
+    margin: 90px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#mercearia h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: green;
+    margin: 20px 0;
+}
+
+#mercearia .img-mercearia img {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os cards */
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Padrão: Um abaixo do outro */
+    max-width: 300px; /* Define um tamanho máximo para os cards */
+}
+
+section.cards > .card > h3 {
+    font-size: 1.4em;
+    margin: 5px 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+section.cards > .card > span {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
+
+/*FIM SEÇÃO MERCEARIA*/
+
+
+/*COMEÇO SEÇÃO FRIOS E LACTINIOS*/
+
+#frioselactinios {
+    margin: 90px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#frioselactinios h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: green;
+    margin: 20px 0;
+}
+
+#frioselactinios .img-frioselactinios img {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os cards */
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Padrão: Um abaixo do outro */
+    max-width: 300px; /* Define um tamanho máximo para os cards */
+}
+
+section.cards > .card > h3 {
+    font-size: 1.4em;
+    margin: 5px 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+section.cards > .card > span {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
+
+/*FIM SEÇÃO FRIOS E LACTINIOS*/
+
 @media (max-width: 999px) {
 body {
     overflow-x: hidden;
