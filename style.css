@@ -109,7 +109,7 @@ transform: rotate(45deg) translate(-5px, -7px);
 
 .apresentacao .img-apresentacao-um {
     background-image: url(img-pag-principal/supermarket-worker-supplying-fruit-department-with-food.jpg);
-    height: 400px;
+    height: 500px;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ transform: rotate(45deg) translate(-5px, -7px);
 
 .apresentacao .img-apresentacao-dois {
     background-image: url(img-pag-principal/pexels-pixabay-264636.jpg);
-    height: 400px;
+    height: 500px;
     background-position: left center;
     background-size: cover;
     
