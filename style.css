@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+header .logo {
+    font-family: "Merienda", serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header a:hover {
+    opacity: 0.7;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: green;
+    height: 8vh;
+}
+
+header  .nav-list {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-list li {
+    font-family: "Merienda", serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+
+header  .mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+header .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+header .nav-list.active {
+transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+from {
+    opacity: 0;
+    transform: translateX(50px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+header .mobile-menu.active .line1 {
+transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+header .mobile-menu.active .line2 {
+opacity: 0;
+}
+
+header .mobile-menu.active .line3 {
+transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.apresentacao {
+    margin: 70px auto;
+    
+    text-align: center;
+}
+
+.apresentacao .logo-img {
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao .img-apresentacao-um {
+    background-image: url(img-pag-principal/supermarket-worker-supplying-fruit-department-with-food.jpg);
+    height: 400px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.apresentacao .img-apresentacao-dois {
+    background-image: url(img-pag-principal/pexels-pixabay-264636.jpg);
+    height: 400px;
+    background-position: left center;
+    background-size: cover;
+    
+    background-attachment: fixed;
+}
+
+.apresentacao h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: green;
+    margin: 20px 0;
+}
+
+.apresentacao h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.apresentacao p {
+    margin: 10px 0px;
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+.apresentacao ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.apresentacao ul li {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+.apresentacao ul li:last-child {
+    border-bottom: none;
+}
+
+.apresentacao .img-apresentacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.apresentacao .img-apresentacao img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*COMEÇO SEÇÃO PADARIA*/
+
+#padaria {
+    margin: 70px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#padaria h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: green;
+    margin: 20px 0;
+}
+
+#padaria .img-padaria img {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os cards */
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Padrão: Um abaixo do outro */
+    max-width: 300px; /* Define um tamanho máximo para os cards */
+}
+
+section.cards > .card > h3 {
+    font-size: 1.4em;
+    margin: 5px 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+section.cards > .card > span {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
+
+/*FIM SEÇÃO PADARIA*/
+
+
+
+/*COMEÇO SEÇÃO HORTIFRUTI*/
+
+#hortifruti {
+    margin: 90px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#hortifruti h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: green;
+    margin: 20px 0;
+}
+
+#hortifruti .img-hortifruti img {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os cards */
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Padrão: Um abaixo do outro */
+    max-width: 300px; /* Define um tamanho máximo para os cards */
+}
+
+section.cards > .card > h3 {
+    font-size: 1.4em;
+    margin: 5px 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+section.cards > .card > span {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
+
+/*FIM SEÇÃO HORTIFRUTI*/
+
+/*COMEÇO SEÇÃO BEBIDAS*/
+
+#bebidas {
+    margin: 90px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#bebidas h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: green;
+    margin: 20px 0;
+}
+
+#bebidas .img-bebidas img {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os cards */
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Padrão: Um abaixo do outro */
+    max-width: 300px; /* Define um tamanho máximo para os cards */
+}
+
+section.cards > .card > h3 {
+    font-size: 1.4em;
+    margin: 5px 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+section.cards > .card > span {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
+
+/*FIM SEÇÃO BEBIDAS*/
+
+@media (max-width: 999px) {
+body {
+    overflow-x: hidden;
+}
+header .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: green;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+}
+header .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+}
+header .mobile-menu {
+    display: block;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    section.cards > .card {
+        width: calc(50% - 15px); /* 2 por linha */
+    }
+}
+
+/* Para notebooks e TVs (acima de 1024px) */
+@media (min-width: 1025px) {
+    section.cards {
+        max-width: 920px; /* Limita o tamanho total do contêiner */
+        margin: 0 auto; /* Centraliza os cards na tela */
+    }
+
+    section.cards > .card {
+        width: calc(33.33% - 15px); /* 3 por linha */
+    }
+}
