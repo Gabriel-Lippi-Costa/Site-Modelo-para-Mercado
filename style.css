@@ -121,8 +121,21 @@ transform: rotate(45deg) translate(-5px, -7px);
     height: 500px;
     background-position: left center;
     background-size: cover;
-    
     background-attachment: fixed;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .apresentacao .img-apresentacao-um{
+        background-position: top center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .apresentacao .img-apresentacao-dois {
+        background-position: left center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
 }
 
 .apresentacao h1 {
