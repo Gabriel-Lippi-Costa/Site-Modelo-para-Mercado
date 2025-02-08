@@ -22,7 +22,7 @@ header {
 header .logo {
     font-family: "Merienda", serif;
     font-size: 24px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 header a {
@@ -46,13 +46,12 @@ header nav {
 
 header  .nav-list {
     list-style: none;
-    display: flex;
+    display: flex;    
 }
 
 header .nav-list li {
     font-family: "Merienda", serif;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 16px;
     margin-left: 32px;
 }
 
@@ -635,7 +634,7 @@ header .nav-list {
     top: 8vh;
     right: 0;
     width: 50vw;
-    height: 92vh;
+    height: 90vh;
     background: green;
     flex-direction: column;
     align-items: center;
