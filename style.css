@@ -755,6 +755,19 @@ section.cards>.card>span {
     }
 }
 
+@media (min-width: 768px) {
+    .p-do-apresentacao {
+        width: 100%; /* Ocupa toda a largura da tela por padrão */
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo */
+    }
+
+    .p-do-apresentacao p {
+        width: 75%; /* 70% menor que o padrão */
+        margin: 0 auto; /* Garante centralização */
+    }
+}
+
 @media (max-width: 768px) {
     .footer-logo {
         width: 100px;
