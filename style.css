@@ -651,39 +651,6 @@ section.cards>.card>span {
 }
 
 
-@media (max-width: 999px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    header .nav-list {
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: green;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        /* Alinha os itens ao topo */
-        gap: 60px;
-        /* Reduz o espaçamento vertical */
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-
-    header .nav-list li {
-        margin-left: 0;
-        opacity: 0;
-    }
-
-    header .mobile-menu {
-        display: block;
-    }
-}
-
-
 #footer {
     background-color: #000;
     /* Fundo preto */
@@ -756,6 +723,38 @@ section.cards>.card>span {
 }
 
 /* Responsividade para telas menores */
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: green;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        /* Alinha os itens ao topo */
+        gap: 60px;
+        /* Reduz o espaçamento vertical */
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    header .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    header .mobile-menu {
+        display: block;
+    }
+}
+
 @media (max-width: 768px) {
     .footer-logo {
         width: 100px;
